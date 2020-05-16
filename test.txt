@@ -1,0 +1,2 @@
+osobe [name=Nikola, prezime=Devic, JMBG=123456789156, pol=Musko, adresa=Becejska, broj_telefona=06428977, korisnicko_ime=Niko, lozinka=1234]
+osobe [name=Nikola, prezime=Devic, JMBG=123456789156, pol=Musko, adresa=Becejska, broj_telefona=06428977, korisnicko_ime=Niko, lozinka=1234]
