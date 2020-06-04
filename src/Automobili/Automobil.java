@@ -14,7 +14,7 @@ public class Automobil {
 	private String godina_proizvodnje;
 	private double zapremina_motora;
 	private double snaga_motor;
-	protected Musterija vlasnik;
+	protected Musterija musterija;
 	
 	protected Automobil(Marka marka, Model model, Gorivo gorivo, String godina_proizvodnje, double zapremina_motora,
 			double snaga_motor, Musterija vlasnik) {
@@ -25,7 +25,7 @@ public class Automobil {
 		this.godina_proizvodnje = godina_proizvodnje;
 		this.zapremina_motora = zapremina_motora;
 		this.snaga_motor = snaga_motor;
-		this.vlasnik = vlasnik;
+		this.musterija = musterija;
 	}
 
 
@@ -54,20 +54,20 @@ public class Automobil {
 
 
 
-	public Musterija getVlasnik() {
-		return vlasnik;
+	public Musterija getMusterija() {
+		return musterija;
 	}
 
 
 
-	public void setVlasnik(Musterija vlasnik) {
-		this.vlasnik = vlasnik;
+	public void setMusterija(Musterija musterija) {
+		this.musterija = musterija;
 	}
 
 
 
 	public Automobil() {
-		this.vlasnik = new Musterija();
+		this.musterija = new Musterija();
 		this.godina_proizvodnje = "";
 		this.zapremina_motora = 0;
 		this.snaga_motor = 0;
@@ -79,8 +79,9 @@ public class Automobil {
 
 	
 	protected Automobil(Marka marka, Model model, String godina_proizvodnje, double zapremina_motora,
-			double snaga_motor) {
+			double snaga_motor,Musterija musterija) {
 		super();
+		this.musterija = new Musterija();
 		this.marka = marka;
 		this.model = model;
 		this.godina_proizvodnje = godina_proizvodnje;
